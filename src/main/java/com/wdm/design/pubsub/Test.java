@@ -1,5 +1,8 @@
 package com.wdm.design.pubsub;
 
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
+
 public class Test {
 
     public static void main(String[] args) {
@@ -13,5 +16,7 @@ public class Test {
         blog.removeObserver(observer);
         blog.addBlog("my second blog");
         blog.delBlog(1);
+        new LinkedBlockingDeque<>(10);
+        new LinkedBlockingQueue<>(10);
     }
 }
